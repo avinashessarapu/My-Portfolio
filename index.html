@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash Essarapu | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b',
+                        accentBlue: '#38bdf8',
+                        accentPurple: '#a855f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased selection:bg-accentBlue/30">
+
+    <nav class="fixed top-0 left-0 w-full bg-darkBg/80 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-wider gradient-text">AE</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#home" class="hover:text-accentBlue transition-colors">Home</a>
+                <a href="#about" class="hover:text-accentBlue transition-colors">About & Education</a>
+                <a href="#skills" class="hover:text-accentBlue transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-accentBlue transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-accentBlue transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-accentBlue transition-colors">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-400 hover:text-white focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-darkCard border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block text-slate-400 hover:text-accentBlue py-2">Home</a>
+            <a href="#about" class="block text-slate-400 hover:text-accentBlue py-2">About & Education</a>
+            <a href="#skills" class="block text-slate-400 hover:text-accentBlue py-2">Skills</a>
+            <a href="#projects" class="block text-slate-400 hover:text-accentBlue py-2">Projects</a>
+            <a href="#experience" class="block text-slate-400 hover:text-accentBlue py-2">Experience</a>
+            <a href="#contact" class="block text-slate-400 hover:text-accentBlue py-2">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 px-4">
+        <div class="max-w-4xl text-center space-y-6">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
+                Hi, I'm <span class="gradient-text">Avinash Essarapu</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-400 font-medium">
+                Computer Science Engineering Student
+            </p>
+            <p class="text-slate-400 max-w-xl mx-auto text-base sm:text-lg">
+                Passionate backend and decentralized systems developer focused on building reliable architectures, smart contract implementations, and secure software ecosystems.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-accentBlue to-accentPurple text-slate-900 font-semibold rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2">
+                    View My Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                    Get In Touch <i data-lucide="mail" class="w-4 h-4"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 pt-6 text-slate-400">
+                <a href="https://www.linkedin.com/in/avinash-essarapu-2a53a32a9/" target="_blank" class="hover:text-accentBlue transition-colors">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="mailto:mailtoavinash@gmail.com" class="hover:text-accentBlue transition-colors">
+                    <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-slate-900/50 border-t border-b border-slate-800 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-12 flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="text-accentBlue"></i> About & Education
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-2 space-y-6">
+                    <p class="text-lg leading-relaxed text-slate-300">
+                        I am a dedicated Computer Science student with strong problem-solving skills, team collaboration capabilities, and technical implementation competence under strict time constraints. Confident in sharing knowledge, presenting innovative ideas, and actively contributing to technical workflows.
+                    </p>
+                    <div class="bg-darkCard border border-slate-800 p-6 rounded-xl flex items-start gap-4">
+                        <i data-lucide="award" class="w-8 h-8 text-accentPurple shrink-0 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-white mb-1">Core Strengths</h4>
+                            <p class="text-sm text-slate-400 leading-relaxed">
+                                Maintained effective team management with innovative problem representation during critical team environments. Recognized for driving fluid technical discussions and collaboration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-darkCard border border-slate-800 rounded-xl p-6 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-accentBlue"></div>
+                    <span class="text-xs uppercase font-bold tracking-wider text-accentBlue block mb-2">B.Tech Degree</span>
+                    <h3 class="text-lg font-bold text-white mb-1">Computer Science Engineering</h3>
+                    <p class="text-sm text-slate-400 mb-4">Lendi Institute Of Engineering and Technology</p>
+                    <div class="flex items-baseline gap-2 pt-2 border-t border-slate-800">
+                        <span class="text-3xl font-extrabold text-white">8.5</span>
+                        <span class="text-sm text-slate-400">CGPA / Percentage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-12 flex items-center gap-3">
+                <i data-lucide="code-2" class="text-accentBlue"></i> Technical Skills
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-darkCard border border-slate-800 p-6 rounded-xl">
+                    <h3 class="text-sm font-semibold text-accentBlue tracking-wider uppercase mb-4 flex items-center gap-2">
+                        <i data-lucide="terminal" class="w-4 h-4"></i> Programming
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 text-slate-300 text-sm px-3 py-1.5 rounded-md font-medium">Java</span>
+                        <span class="bg-slate-800 text-slate-300 text-sm px-3 py-1.5 rounded-md font-medium">C++</span>
+                    </div>
+                </div>
+                <div class="bg-darkCard border border-slate-800 p-6 rounded-xl">
+                    <h3 class="text-sm font-semibold text-accentBlue tracking-wider uppercase mb-4 flex items-center gap-2">
+                        <i data-lucide="globe" class="w-4 h-4"></i> Development
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 text-slate-300 text-sm px-3 py-1.5 rounded-md font-medium">HTML</span>
+                        <span class="bg-slate-800 text-slate-300 text-sm px-3 py-1.5 rounded-md font-medium">CSS</span>
+                        <span class="bg-slate-800 text-slate-400 text-sm px-3 py-1.5 rounded-md font-medium italic">Spring Boot (Familiar)</span>
+                    </div>
+                </div>
+                <div class="bg-darkCard border border-slate-800 p-6 rounded-xl">
+                    <h3 class="text-sm font-semibold text-accentBlue tracking-wider uppercase mb-4 flex items-center gap-2">
+                        <i data-lucide="database" class="w-4 h-4"></i> Databases
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-800 text-slate-300 text-sm px-3 py-1.5 rounded-md font-medium">MySQL</span>
+                    </div>
+                </div>
+                <div class="bg-darkCard border border-slate-800 p-6 rounded-xl">
+                    <h3 class="text-sm font-semibold text-accentBlue tracking-wider uppercase mb-4 flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-4 h-4"></i> CS Core Subjects
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1.5 rounded-md font-medium">Data structures & Algorithms</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1.5 rounded-md font-medium">OOPS</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1.5 rounded-md font-medium">DBMS</span>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1.5 rounded-md font-medium">CN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 bg-darkCard/50 border border-slate-800/80 rounded-xl p-6 flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-2 text-sm font-semibold text-slate-400 uppercase tracking-wider">
+                    <i data-lucide="cpu" class="w-4 h-4 text-accentPurple"></i> Development & AI Tools:
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 border border-slate-800 text-slate-400 text-sm px-3 py-1 rounded-md">VS code</span>
+                    <span class="bg-slate-900 border border-slate-800 text-slate-400 text-sm px-3 py-1 rounded-md">GitHub</span>
+                    <span class="bg-slate-900 border border-slate-800 text-slate-400 text-sm px-3 py-1 rounded-md">ChatGPT</span>
+                    <span class="bg-slate-900 border border-slate-800 text-slate-400 text-sm px-3 py-1 rounded-md">Claude AI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-slate-900/50 border-t border-b border-slate-800 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-12 flex items-center gap-3">
+                <i data-lucide="folder-git-2" class="text-accentBlue"></i> Key Projects
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-darkCard border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-slate-700 transition-colors">
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-white group-hover:text-accentBlue transition-colors">Public Grievance Redressal System</h3>
+                            <span class="text-xs bg-accentBlue/10 text-accentBlue border border-accentBlue/20 px-2.5 py-1 rounded-full font-medium">Web App</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Developed a highly robust full-stack Public Grievance System. Architected structured RESTful APIs with secure data persistence frameworks. Implemented role-based access control workflows (Admin/Citizen) to secure endpoint entries and individual user paths. Optimized global exception integrations for uniform API tracking.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/80">
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">Java</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">Spring Boot</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">Spring Data JPA</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">MySQL</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">HTML</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-darkCard border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-slate-700 transition-colors">
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-bold text-white group-hover:text-accentBlue transition-colors">Smart Certify</h3>
+                            <span class="text-xs bg-accentPurple/10 text-accentPurple border border-accentPurple/20 px-2.5 py-1 rounded-full font-medium">Blockchain</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Built a decentralized validation application leveraging distributed ledger security to protect and verify academic credentials securely. Implemented programmable smart contracts for core validation structures and established structural, tamper-proof storage configurations for records.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-800/80">
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">Python (web3.py)</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">Ethereum</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2.5 py-1 rounded border border-slate-800">Django</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-12 flex items-center gap-3">
+                <i data-lucide="briefcase" class="text-accentBlue"></i> Internships
+            </h2>
+            <div class="relative border-l border-slate-800 ml-4 space-y-12">
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 bg-accentPurple w-4 h-4 rounded-full ring-4 ring-darkBg"></div>
+                    <div class="bg-darkCard border border-slate-800 p-6 rounded-xl">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <h3 class="text-lg font-bold text-white">Employability Skill Job Ready Virtual Internship</h3>
+                            <span class="text-sm text-slate-400 bg-slate-900 px-3 py-1 rounded border border-slate-800">Oct - Dec 2024</span>
+                        </div>
+                        <p class="text-sm font-medium text-accentBlue mb-2">EduSkills</p>
+                        <p class="text-sm text-slate-400">
+                            Acquired industrial development methodologies, soft skills strategies, and professional structural workflows to fulfill corporate development frameworks effectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute -left-[9px] top-1.5 bg-accentBlue w-4 h-4 rounded-full ring-4 ring-darkBg"></div>
+                    <div class="bg-darkCard border border-slate-800 p-6 rounded-xl">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <h3 class="text-lg font-bold text-white">Ethical Hacking Virtual Internship</h3>
+                            <span class="text-sm text-slate-400 bg-slate-900 px-3 py-1 rounded border border-slate-800">Jul - Sep 2024</span>
+                        </div>
+                        <p class="text-sm font-medium text-accentBlue mb-2">EduSkills</p>
+                        <p class="text-sm text-slate-400">
+                            Studied network vulnerability assessments, critical penetration vectors, threat vectors mitigation parameters, and standard security engineering paradigms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-900/50 border-t border-slate-800 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Let's Connect</h2>
+                <p class="text-slate-400 max-w-md mx-auto">
+                    Interested in full-stack architecture, web development opportunities, or technical alignment? Feel free to reach out!
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto pt-4">
+                <a href="mailto:mailtoavinash@gmail.com" class="bg-darkCard border border-slate-800 p-6 rounded-xl flex flex-col items-center gap-2 hover:border-slate-700 transition-colors">
+                    <i data-lucide="mail" class="w-6 h-6 text-accentBlue"></i>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email</span>
+                    <span class="text-sm font-medium text-white">mailtoavinash@gmail.com</span>
+                </a>
+                <a href="tel:+916303867852" class="bg-darkCard border border-slate-800 p-6 rounded-xl flex flex-col items-center gap-2 hover:border-slate-700 transition-colors">
+                    <i data-lucide="phone" class="w-6 h-6 text-accentPurple"></i>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Phone</span>
+                    <span class="text-sm font-medium text-white">+91 6303867852</span>
+                </a>
+            </div>
+            <p class="text-xs text-slate-500 pt-12">
+                &copy; 2026 Avinash Essarapu. Built with Tailwind CSS & Lucide Icons.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click of a link
+        const navLinks = mobileMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
